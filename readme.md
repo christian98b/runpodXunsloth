@@ -5,3 +5,10 @@ https://runpod.io/console/deploy?template=za4ivljvyt&ref=2rmge3zj
 
 dockerhub:
 https://hub.docker.com/repository/docker/district987/runpodxunsloth
+
+Build it yourself:
+
+docker build -t yourusername/yourimage:vX.X.X .
+
+In case you want to push it to the hub:
+docker push yourusername/yourimage:tag
