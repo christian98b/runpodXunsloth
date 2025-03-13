@@ -9,6 +9,7 @@ ENV HF_HUB_ENABLE_HF_TRANSFER=1
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir huggingface_hub[hf_transfer]
 RUN pip install --no-cache-dir xformers torch BitsandBytes triton transformers accelerate datasets
+RUN pip install git+https://github.com/unslothai/unsloth-zoo.git
 RUN pip install "unsloth[cu124-torch240] @ git+https://github.com/unslothai/unsloth.git"
 
 # Run app.py when the container launches
