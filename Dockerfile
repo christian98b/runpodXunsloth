@@ -12,5 +12,5 @@ RUN pip install --no-cache-dir xformers torch BitsandBytes triton transformers a
 RUN pip install git+https://github.com/unslothai/unsloth-zoo.git
 RUN pip install "unsloth[cu124-torch240] @ git+https://github.com/unslothai/unsloth.git"
 
-# Run app.py when the container launches
+# Run start.sh when the container launches
 CMD [ "/start.sh" ]
