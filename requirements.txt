@@ -1,4 +1,0 @@
-xformers
-torch
-BitsandBytes
-triton
