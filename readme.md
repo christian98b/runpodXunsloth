@@ -1,6 +1,3 @@
-Here is an updated README file based on the information provided:
-
-```markdown
 # Unofficial RunPod Image with CUDA 12.4, PyTorch 2.4, and Preinstalled Unsloth
 
 This is an unofficial Docker image that builds upon the JupyterHub RunPod image. It includes CUDA 12.4, PyTorch 2.4, and preinstalls the Unsloth library.
@@ -82,7 +79,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [RunPod](https://runpod.io/) for providing the base image.
 - [Unsloth](https://github.com/unslothai/unsloth) for the Unsloth library.
-```
 
 ### Explanation of Updates:
 
@@ -107,5 +103,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 7. **License and Acknowledgments:**
    - Added sections for the license and acknowledgments.
-
-This updated README file provides comprehensive instructions and information for users who want to build, use, and contribute to the project.
