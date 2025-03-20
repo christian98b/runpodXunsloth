@@ -1,13 +1,14 @@
 import argparse
-import subprocess
+import os
+import sh
 
 def run_command(command):
     """Run a shell command and print the output."""
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
-    if result.returncode != 0:
-        print(f"Error: {result.stderr}")
-    else:
-        print(result.stdout)
+    try:
+        result = sh.command(command)()
+        print(result)
+    except sh.ErrorReturnCode as e:
+        print(f"Error: {e.stderr}")
 
 def main():
     parser = argparse.ArgumentParser(description="Build and push a Docker image to Docker Hub.")
